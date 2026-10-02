@@ -56,4 +56,4 @@ Review the generated changes, then verify that the generated files match their s
 
 The checks require Bash 4 or later, Python 3 with PyYAML, and `rg`. Integration tests that require a live cluster are documented in the deployment-model READMEs and their `tests/` directories.
 
-For general Stack authoring and catalog contribution requirements, see the [repository README](../README.md#build-a-custom-stack) and [contribution checklist](../README.md#contribute-a-certified-stack).
+For general Stack authoring and catalog contribution requirements, see the [repository README](../../README.md#build-a-custom-stack) and [contribution checklist](../../README.md#contribute-a-certified-stack).

@@ -48,7 +48,7 @@ Connect `kubectl` to the Platform management API, then create a StackInstance in
 
 ```bash
 vcluster platform connect management
-kubectl apply -n p-default -f nvidia-dynamo/example/stackinstance-tenant-cluster.yaml
+kubectl apply -n p-default -f certified-stacks/nvidia-dynamo/example/stackinstance-tenant-cluster.yaml
 ```
 
 You can also create the Stack from the Platform UI with the **NVIDIA Dynamo** template.
@@ -90,7 +90,7 @@ Delete them manually if you do not plan to reinstall the runtime.
 
 ## Known limitations
 
-- The Stack does not expose Helm values beyond `version` and `namespace`. To customize the chart further, copy the StackTemplate as described in the [repository README](../README.md#use-a-certified-stack).
+- The Stack does not expose Helm values beyond `version` and `namespace`. To customize the chart further, copy the StackTemplate as described in the [repository README](../../README.md#use-a-certified-stack).
 - NATS and etcd run as single, bundled instances. Use a custom copy of the template to point the operator at external NATS or etcd.
 
 ## Test changes
@@ -103,4 +103,4 @@ From the repository root, run the static checks:
 
 The checks require Python 3 with PyYAML, and Helm. CI also validates every manifest in this directory with a server-side dry run against vCluster Platform.
 
-For general Stack authoring and catalog contribution requirements, see the [repository README](../README.md#build-a-custom-stack) and [contribution checklist](../README.md#contribute-a-certified-stack).
+For general Stack authoring and catalog contribution requirements, see the [repository README](../../README.md#build-a-custom-stack) and [contribution checklist](../../README.md#contribute-a-certified-stack).
