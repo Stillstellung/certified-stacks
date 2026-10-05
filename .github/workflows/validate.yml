@@ -66,9 +66,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes ripgrep python3-yaml
       - name: Render Run:ai manifests
-        run: ./run-ai/render.sh --check
+        run: ./certified-stacks/run-ai/render.sh --check
       - name: Check NVIDIA Dynamo manifests
-        run: ./nvidia-dynamo/test-certified-manifests.sh
+        run: ./certified-stacks/nvidia-dynamo/test-certified-manifests.sh
       - name: Start vCluster Platform
         run: |
           cat > "$RUNNER_TEMP/platform-values.yaml" <<'EOF'

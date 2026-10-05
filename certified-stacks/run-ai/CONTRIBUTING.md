@@ -64,13 +64,13 @@ Dedicated control-plane tenancy does not show this problem. Its stack-wide allow
 From repository root:
 
 ```bash
-./run-ai/render.sh
+./certified-stacks/run-ai/render.sh
 ```
 
 Review generated changes. Then verify artifacts match source files:
 
 ```bash
-./run-ai/render.sh --check
+./certified-stacks/run-ai/render.sh --check
 ```
 
 Renderer also checks tenancy boundaries. Dedicated output owns ingress deployment and readiness. Central output requires host ingress and has no dedicated-ingress task references.

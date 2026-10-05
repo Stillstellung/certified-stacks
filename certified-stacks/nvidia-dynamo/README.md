@@ -98,7 +98,7 @@ Delete them manually if you do not plan to reinstall the runtime.
 From the repository root, run the static checks:
 
 ```bash
-./nvidia-dynamo/test-certified-manifests.sh
+./certified-stacks/nvidia-dynamo/test-certified-manifests.sh
 ```
 
 The checks require Python 3 with PyYAML, and Helm. CI also validates every manifest in this directory with a server-side dry run against vCluster Platform.

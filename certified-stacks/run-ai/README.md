@@ -45,13 +45,13 @@ Edit files under `source/`. Do not edit the generated deployment-model directori
 From the repository root, generate the deployment-model directories:
 
 ```bash
-./run-ai/render.sh
+./certified-stacks/run-ai/render.sh
 ```
 
 Review the generated changes, then verify that the generated files match their sources and run the manifest checks:
 
 ```bash
-./run-ai/render.sh --check
+./certified-stacks/run-ai/render.sh --check
 ```
 
 The checks require Bash 4 or later, Python 3 with PyYAML, and `rg`. Integration tests that require a live cluster are documented in the deployment-model READMEs and their `tests/` directories.

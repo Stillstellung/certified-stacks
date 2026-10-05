@@ -100,8 +100,8 @@ Use the [NVIDIA Run:ai implementation](certified-stacks/run-ai/) as the current 
 For Run:ai changes, render and verify the generated manifests from the repository root:
 
 ```bash
-./run-ai/render.sh
-./run-ai/render.sh --check
+./certified-stacks/run-ai/render.sh
+./certified-stacks/run-ai/render.sh --check
 ```
 
 The checks require Bash 4 or later, Python 3 with PyYAML, `rg`, and Helm. Review all generated changes before opening a pull request.
